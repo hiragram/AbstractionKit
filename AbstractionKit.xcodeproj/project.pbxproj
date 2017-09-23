@@ -23,6 +23,13 @@
 		60374D801F76B9E400CC9991 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60374D7E1F76B9E400CC9991 /* LaunchScreen.storyboard */; };
 		60374D861F76BA0C00CC9991 /* Abstraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D851F76BA0C00CC9991 /* Abstraction.swift */; };
 		60374D891F76BA2A00CC9991 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D881F76BA2A00CC9991 /* Endpoint.swift */; };
+		60374D911F76C3AD00CC9991 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60374D8C1F76C3AD00CC9991 /* APIKit.framework */; };
+		60374D921F76C3AD00CC9991 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60374D8D1F76C3AD00CC9991 /* Himotoki.framework */; };
+		60374D931F76C3AD00CC9991 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60374D8E1F76C3AD00CC9991 /* Result.framework */; };
+		60374D941F76C3AD00CC9991 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60374D8F1F76C3AD00CC9991 /* RxCocoa.framework */; };
+		60374D951F76C3AD00CC9991 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60374D901F76C3AD00CC9991 /* RxSwift.framework */; };
+		60374D9A1F76C4A000CC9991 /* APIKitBridgeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D991F76C4A000CC9991 /* APIKitBridgeRequest.swift */; };
+		60374D9C1F76C67300CC9991 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D9B1F76C67300CC9991 /* Forecast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +71,13 @@
 		60374D811F76B9E400CC9991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60374D851F76BA0C00CC9991 /* Abstraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Abstraction.swift; sourceTree = "<group>"; };
 		60374D881F76BA2A00CC9991 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		60374D8C1F76C3AD00CC9991 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = SOURCE_ROOT; };
+		60374D8D1F76C3AD00CC9991 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = SOURCE_ROOT; };
+		60374D8E1F76C3AD00CC9991 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = SOURCE_ROOT; };
+		60374D8F1F76C3AD00CC9991 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
+		60374D901F76C3AD00CC9991 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
+		60374D991F76C4A000CC9991 /* APIKitBridgeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKitBridgeRequest.swift; sourceTree = "<group>"; };
+		60374D9B1F76C67300CC9991 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +100,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60374D951F76C3AD00CC9991 /* RxSwift.framework in Frameworks */,
+				60374D941F76C3AD00CC9991 /* RxCocoa.framework in Frameworks */,
+				60374D931F76C3AD00CC9991 /* Result.framework in Frameworks */,
+				60374D921F76C3AD00CC9991 /* Himotoki.framework in Frameworks */,
+				60374D911F76C3AD00CC9991 /* APIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +158,11 @@
 		60374D741F76B9E400CC9991 /* AbstractionKitSample */ = {
 			isa = PBXGroup;
 			children = (
+				60374D8C1F76C3AD00CC9991 /* APIKit.framework */,
+				60374D8D1F76C3AD00CC9991 /* Himotoki.framework */,
+				60374D8E1F76C3AD00CC9991 /* Result.framework */,
+				60374D8F1F76C3AD00CC9991 /* RxCocoa.framework */,
+				60374D901F76C3AD00CC9991 /* RxSwift.framework */,
 				60374D871F76BA1300CC9991 /* Abstraction */,
 				60374D751F76B9E400CC9991 /* AppDelegate.swift */,
 				60374D771F76B9E400CC9991 /* ViewController.swift */,
@@ -154,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				60374D851F76BA0C00CC9991 /* Abstraction.swift */,
+				60374D9B1F76C67300CC9991 /* Forecast.swift */,
+				60374D991F76C4A000CC9991 /* APIKitBridgeRequest.swift */,
 				60374D881F76BA2A00CC9991 /* Endpoint.swift */,
 			);
 			name = Abstraction;
@@ -216,6 +242,7 @@
 				60374D6F1F76B9E400CC9991 /* Sources */,
 				60374D701F76B9E400CC9991 /* Frameworks */,
 				60374D711F76B9E400CC9991 /* Resources */,
+				60374D961F76C3BC00CC9991 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -302,6 +329,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		60374D961F76C3BC00CC9991 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Himotoki.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		60374D441F76AE7300CC9991 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -328,9 +377,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60374D9A1F76C4A000CC9991 /* APIKitBridgeRequest.swift in Sources */,
 				60374D781F76B9E400CC9991 /* ViewController.swift in Sources */,
 				60374D761F76B9E400CC9991 /* AppDelegate.swift in Sources */,
 				60374D891F76BA2A00CC9991 /* Endpoint.swift in Sources */,
+				60374D9C1F76C67300CC9991 /* Forecast.swift in Sources */,
 				60374D861F76BA0C00CC9991 /* Abstraction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,6 +594,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AbstractionKitSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yura.AbstractionKitSample;
@@ -556,6 +611,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AbstractionKitSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yura.AbstractionKitSample;
@@ -583,6 +642,7 @@
 				60374D5F1F76AE7300CC9991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60374D601F76AE7300CC9991 /* Build configuration list for PBXNativeTarget "AbstractionKitTests" */ = {
 			isa = XCConfigurationList;
@@ -591,6 +651,7 @@
 				60374D621F76AE7300CC9991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60374D821F76B9E400CC9991 /* Build configuration list for PBXNativeTarget "AbstractionKitSample" */ = {
 			isa = XCConfigurationList;
@@ -599,6 +660,7 @@
 				60374D841F76B9E400CC9991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
