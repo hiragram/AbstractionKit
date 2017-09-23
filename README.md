@@ -51,11 +51,105 @@ See: [How to define response](Documentation/How_to_define_response.md)
 
 ## How to bridge between AbstractionKit and networking frameworks
 
-_work in progress_
+Create a wrapper for the network framework. The wrapper transforms AbstractionKit's endpoint instance to network framework's request object and generate object from response JSON.
+
+For example, wrapper for APIKit is as follows,
+
+```swift
+struct APIKitBridgeRequest<Endpoint: EndpointDefinition>: APIKit.Request {
+    typealias Response = Endpoint.Response.Result
+    var baseURL: URL = Endpoint.environment.url(forPath: "")
+
+    var path = Endpoint.path
+
+    var parameters: Any? {
+        return endpoint.parameters
+    }
+
+    var method: APIKit.HTTPMethod {
+        return endpoint.method.apiKitMethod
+    }
+
+    private let endpoint: Endpoint
+
+    init(endpoint: Endpoint) {
+        self.endpoint = endpoint
+    }
+
+    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Endpoint.Response.Result {
+        guard let jsonObj = object as? Endpoint.Response.JSON else {
+            fatalError()
+        }
+        return try Endpoint.Response.init(json: jsonObj).result
+    }
+}
+```
+
+This wrapper has AbstractionKit's endpoint definition as a generic type parameter, and conforms to `APIKit.Request` protocol.
+
+Then you create an instance of `APIKitBridgeRequest` and execute request.
+
+```swift
+// `GetUser.Response` is `SingleResponse<User>`
+let endpoint = GetUser.init(userID: 100)
+let request = APIKitBridgeRequest.init(endpoint: endpoint)
+Session.send(request, callbackQueue: nil, handler: { (result) in
+    switch result {
+    case .success(let user):
+        print(user)
+    case .failure(let error):
+        print(error)
+    }
+})
+```
 
 ## How to bridge between AbstractionKit and mapping frameworks
 
-_work in progress_
+`SingleResponseElement` and `ArrayResponseElement` are available to define model object types. Each protocol constraints to implement `decode` method. You can use any mapping framework in the method as follows,
+
+```swift
+struct User: SingleResponseElement, Himotoki.Decodable {
+    static var singleKey = "user"
+
+    var id: Int
+    var name: String
+
+    /// Implementation for Himotoki.Decodable
+    static func decode(_ e: Extractor) throws -> User {
+        return try User.init(
+            id: e <| "id",
+            name: e <| "name"
+        )
+    }
+
+    /// Implementation for AbstractionKit.SingleResponseElement
+    static func decode(from json: Any) throws -> User {
+        // Using Himotoki internally.
+        return try decodeValue(json)
+    }
+}
+```
+
+AbstractionKit does not depend on any mapping framework, so you can also map JSON to object manually. (Of course I will never recommend it.)
+
+```swift
+struct User: SingleResponseElement {
+    static var singleKey = "user"
+
+    var id: Int
+    var name: String
+
+    /// Implementation for AbstractionKit.SingleResponseElement
+    static func decode(from obj: Any) throws -> User {
+        let json = obj as! [String: Any]
+
+        return User.init(
+            id: json["id"] as! Int,
+            name: json["name"] as! String
+        )
+    }
+}
+```
 
 ## How to create cool abstraction layer using AbstractionKit
 
