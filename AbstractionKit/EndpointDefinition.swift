@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol EndpointDefinition {
+public protocol EndpointDefinition {
     associatedtype Response: ResponseDefinition
     associatedtype Environment: EnvironmentDefinition
 

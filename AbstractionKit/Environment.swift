@@ -13,3 +13,9 @@ public protocol EnvironmentDefinition {
 
     func url(forPath: String) -> URL
 }
+
+public extension EnvironmentDefinition {
+    func url(forPath path: String) -> URL {
+        return URL.init(string: baseURLStr + path)!
+    }
+}

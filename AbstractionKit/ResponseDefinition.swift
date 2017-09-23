@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ResponseDefinition {
+public protocol ResponseDefinition {
     associatedtype Result
     associatedtype JSON
 
@@ -17,58 +17,58 @@ protocol ResponseDefinition {
     init(json: JSON) throws
 }
 
-protocol DataResponseDefinition: ResponseDefinition {
+public protocol DataResponseDefinition: ResponseDefinition {
     static var jsonKey: String { get }
 }
 
-struct SingleResponse<T: SingleResponseElement>: DataResponseDefinition {
-    typealias Result = T
-    typealias JSON = [String: Any]
+public struct SingleResponse<T: SingleResponseElement>: DataResponseDefinition {
+    public typealias Result = T
+    public typealias JSON = [String: Any]
 
-    let result: Result
+    public let result: Result
 
-    static var jsonKey: String {
+    public static var jsonKey: String {
         return T.singleKey
     }
 
-    init(json: JSON) throws {
+    public init(json: JSON) throws {
         result = try T.decode(from: json)
     }
 }
 
-struct ArrayResponse<T: ArrayResponseElement>: DataResponseDefinition {
-    typealias Result = [T]
-    typealias JSON = [[String: Any]]
+public struct ArrayResponse<T: ArrayResponseElement>: DataResponseDefinition {
+    public typealias Result = [T]
+    public typealias JSON = [[String: Any]]
 
-    let result: Result
+    public let result: Result
 
-    static var jsonKey: String {
+    public static var jsonKey: String {
         return T.pluralKey
     }
 
-    init(json: JSON) throws {
+    public init(json: JSON) throws {
         result = try T.decode(from: json)
     }
 }
 
-struct EmptyResponse: ResponseDefinition {
-    typealias Result = Void
-    typealias JSON = Any?
+public struct EmptyResponse: ResponseDefinition {
+    public typealias Result = Void
+    public typealias JSON = Any?
 
-    let result: Result
+    public let result: Result
 
-    init(json: JSON) throws {
+    public init(json: JSON) throws {
         result = ()
     }
 }
 
-struct CombinedResponse<T1: DataResponseDefinition, T2: DataResponseDefinition>: ResponseDefinition {
-    typealias Result = (T1.Result, T2.Result)
-    typealias JSON = [String: Any]
+public struct CombinedResponse<T1: DataResponseDefinition, T2: DataResponseDefinition>: ResponseDefinition {
+    public typealias Result = (T1.Result, T2.Result)
+    public typealias JSON = [String: Any]
 
-    let result: Result
+    public let result: Result
 
-    init(json: [String : Any]) throws {
+    public init(json: [String : Any]) throws {
         guard let t1JSON = json[T1.jsonKey] as? T1.JSON else {
             throw CombinedResponseError.keyNotFound(key: T1.jsonKey)
         }
