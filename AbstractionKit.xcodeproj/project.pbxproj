@@ -10,6 +10,12 @@
 		60374D531F76AE7300CC9991 /* AbstractionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60374D491F76AE7300CC9991 /* AbstractionKit.framework */; };
 		60374D581F76AE7300CC9991 /* AbstractionKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D571F76AE7300CC9991 /* AbstractionKitTests.swift */; };
 		60374D5A1F76AE7300CC9991 /* AbstractionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 60374D4C1F76AE7300CC9991 /* AbstractionKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60374D641F76B12900CC9991 /* EndpointDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D631F76B12900CC9991 /* EndpointDefinition.swift */; };
+		60374D661F76B21D00CC9991 /* ResponseDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D651F76B21D00CC9991 /* ResponseDefinition.swift */; };
+		60374D681F76B29900CC9991 /* ResponseElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D671F76B29900CC9991 /* ResponseElement.swift */; };
+		60374D6A1F76B37400CC9991 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D691F76B37400CC9991 /* Environment.swift */; };
+		60374D6C1F76B3A200CC9991 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D6B1F76B3A200CC9991 /* HTTPMethod.swift */; };
+		60374D6E1F76B87000CC9991 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D6D1F76B87000CC9991 /* Errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,12 @@
 		60374D521F76AE7300CC9991 /* AbstractionKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbstractionKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60374D571F76AE7300CC9991 /* AbstractionKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionKitTests.swift; sourceTree = "<group>"; };
 		60374D591F76AE7300CC9991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60374D631F76B12900CC9991 /* EndpointDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointDefinition.swift; sourceTree = "<group>"; };
+		60374D651F76B21D00CC9991 /* ResponseDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseDefinition.swift; sourceTree = "<group>"; };
+		60374D671F76B29900CC9991 /* ResponseElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseElement.swift; sourceTree = "<group>"; };
+		60374D691F76B37400CC9991 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		60374D6B1F76B3A200CC9991 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		60374D6D1F76B87000CC9991 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,12 @@
 			isa = PBXGroup;
 			children = (
 				60374D4C1F76AE7300CC9991 /* AbstractionKit.h */,
+				60374D631F76B12900CC9991 /* EndpointDefinition.swift */,
+				60374D6B1F76B3A200CC9991 /* HTTPMethod.swift */,
+				60374D691F76B37400CC9991 /* Environment.swift */,
+				60374D651F76B21D00CC9991 /* ResponseDefinition.swift */,
+				60374D6D1F76B87000CC9991 /* Errors.swift */,
+				60374D671F76B29900CC9991 /* ResponseElement.swift */,
 				60374D4D1F76AE7300CC9991 /* Info.plist */,
 			);
 			path = AbstractionKit;
@@ -149,6 +167,7 @@
 					60374D481F76AE7300CC9991 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = Q3N95Y73WF;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					60374D511F76AE7300CC9991 = {
@@ -198,6 +217,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60374D681F76B29900CC9991 /* ResponseElement.swift in Sources */,
+				60374D6A1F76B37400CC9991 /* Environment.swift in Sources */,
+				60374D641F76B12900CC9991 /* EndpointDefinition.swift in Sources */,
+				60374D6C1F76B3A200CC9991 /* HTTPMethod.swift in Sources */,
+				60374D6E1F76B87000CC9991 /* Errors.swift in Sources */,
+				60374D661F76B21D00CC9991 /* ResponseDefinition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +349,7 @@
 		60374D5E1F76AE7300CC9991 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
@@ -336,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.yura.AbstractionKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +370,7 @@
 		60374D5F1F76AE7300CC9991 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
@@ -362,6 +390,7 @@
 		60374D611F76AE7300CC9991 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
 				INFOPLIST_FILE = AbstractionKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +403,7 @@
 		60374D621F76AE7300CC9991 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
 				INFOPLIST_FILE = AbstractionKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
