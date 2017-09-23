@@ -37,12 +37,5 @@ class ViewController: UIViewController {
             .bind(to: forecasts)
             .disposed(by: bag)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
 }
 
