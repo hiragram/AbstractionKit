@@ -5,4 +5,4 @@ matrix:
       osx_image: xcode8.3
       script:
         - set -o pipefail
-        - xcodebuild -scheme AbstractionKitTests -configuration Release test -destination 'name=iPhone 7' | xcpretty -c
+        - xcodebuild -scheme AbstractionKitTests -configuration Debug test -destination 'name=iPhone 7' | xcpretty -c
