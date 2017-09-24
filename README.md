@@ -1,5 +1,7 @@
 # AbstractionKit
 
+[![Build Status](https://travis-ci.org/hiragram/AbstractionKit.svg?branch=master)](https://travis-ci.org/hiragram/AbstractionKit)
+
 AbstractionKit provides protocols and structs that make easier to abstract json API.
 
 This does not depend on any other networking and mapping frameworks. So you can bridge between AbstractionKit and any frameworks you usually use.
