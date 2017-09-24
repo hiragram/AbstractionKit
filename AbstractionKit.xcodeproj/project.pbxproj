@@ -30,6 +30,9 @@
 		60374D951F76C3AD00CC9991 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60374D901F76C3AD00CC9991 /* RxSwift.framework */; };
 		60374D9A1F76C4A000CC9991 /* APIKitBridgeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D991F76C4A000CC9991 /* APIKitBridgeRequest.swift */; };
 		60374D9C1F76C67300CC9991 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D9B1F76C67300CC9991 /* Forecast.swift */; };
+		60873F0E1F776DDD00489857 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873F0D1F776DDD00489857 /* Models.swift */; };
+		60873F121F776F5E00489857 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873F111F776F5E00489857 /* Endpoints.swift */; };
+		60873F151F77739300489857 /* Dictionary+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873F141F77739300489857 /* Dictionary+decode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		60374D901F76C3AD00CC9991 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
 		60374D991F76C4A000CC9991 /* APIKitBridgeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKitBridgeRequest.swift; sourceTree = "<group>"; };
 		60374D9B1F76C67300CC9991 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		60873F0D1F776DDD00489857 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		60873F111F776F5E00489857 /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		60873F141F77739300489857 /* Dictionary+decode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+decode.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 				60374D561F76AE7300CC9991 /* AbstractionKitTests */,
 				60374D741F76B9E400CC9991 /* AbstractionKitSample */,
 				60374D4A1F76AE7300CC9991 /* Products */,
+				60873F0F1F776E2E00489857 /* PrivateDependencies */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				60374D571F76AE7300CC9991 /* AbstractionKitTests.swift */,
+				60873F111F776F5E00489857 /* Endpoints.swift */,
+				60873F0D1F776DDD00489857 /* Models.swift */,
+				60873F141F77739300489857 /* Dictionary+decode.swift */,
 				60374D591F76AE7300CC9991 /* Info.plist */,
 			);
 			path = AbstractionKitTests;
@@ -158,11 +168,6 @@
 		60374D741F76B9E400CC9991 /* AbstractionKitSample */ = {
 			isa = PBXGroup;
 			children = (
-				60374D8C1F76C3AD00CC9991 /* APIKit.framework */,
-				60374D8D1F76C3AD00CC9991 /* Himotoki.framework */,
-				60374D8E1F76C3AD00CC9991 /* Result.framework */,
-				60374D8F1F76C3AD00CC9991 /* RxCocoa.framework */,
-				60374D901F76C3AD00CC9991 /* RxSwift.framework */,
 				60374D871F76BA1300CC9991 /* Abstraction */,
 				60374D751F76B9E400CC9991 /* AppDelegate.swift */,
 				60374D771F76B9E400CC9991 /* ViewController.swift */,
@@ -183,6 +188,18 @@
 				60374D881F76BA2A00CC9991 /* Endpoint.swift */,
 			);
 			name = Abstraction;
+			sourceTree = "<group>";
+		};
+		60873F0F1F776E2E00489857 /* PrivateDependencies */ = {
+			isa = PBXGroup;
+			children = (
+				60374D8C1F76C3AD00CC9991 /* APIKit.framework */,
+				60374D8D1F76C3AD00CC9991 /* Himotoki.framework */,
+				60374D8E1F76C3AD00CC9991 /* Result.framework */,
+				60374D8F1F76C3AD00CC9991 /* RxCocoa.framework */,
+				60374D901F76C3AD00CC9991 /* RxSwift.framework */,
+			);
+			name = PrivateDependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +387,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				60374D581F76AE7300CC9991 /* AbstractionKitTests.swift in Sources */,
+				60873F121F776F5E00489857 /* Endpoints.swift in Sources */,
+				60873F0E1F776DDD00489857 /* Models.swift in Sources */,
+				60873F151F77739300489857 /* Dictionary+decode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +588,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AbstractionKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yura.AbstractionKitTests;
@@ -581,6 +605,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AbstractionKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yura.AbstractionKitTests;
