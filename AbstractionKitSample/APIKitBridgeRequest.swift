@@ -10,6 +10,7 @@ import Foundation
 import APIKit
 import AbstractionKit
 
+/// Bridges network process between AbstractionKit and APIKit.
 struct APIKitBridgeRequest<Endpoint: EndpointDefinition>: APIKit.Request {
     typealias Response = Endpoint.Response.Result
     var baseURL: URL = Endpoint.environment.url(forPath: "")
