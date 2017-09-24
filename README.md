@@ -47,6 +47,22 @@ let user = try GetUser.Response.init(json: json).result
 
 A sample that uses [APIKit](https://github.com/ishkawa/APIKit), [Himotoki](https://github.com/ikesyo/Himotoki), and [RxSwift](https://github.com/ReactiveX/RxSwift) is available. Clone and run `$ carthage update` then run `AbstractionKitSample`.
 
+## Installation
+
+### Requirements
+
+- Swift 3.1
+- Xcode 8.3
+
+__🔰 Swift 4 and Xcode 9 support is not available yet. 🔰__
+
+### Carthage
+
+- Add `github "hiragram/AbstractionKit" ~> 0.1` to your `Cartfile`.
+- Run `$ carthage update`.
+- Add built framework in `Carthage/Build/iOS/` to your project.
+- Append `AbstractionKit.framework` to arguments of `$ carthage copy-frameworks`.
+
 ## How to define response
 
 See: [How to define response](Documentation/How_to_define_response.md)
