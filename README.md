@@ -2,13 +2,13 @@
 
 [![Build Status](https://travis-ci.org/hiragram/AbstractionKit.svg?branch=master)](https://travis-ci.org/hiragram/AbstractionKit)
 
-AbstractionKit provides protocols and structs that make easier to abstract json API.
+AbstractionKit provides various protocols and structs that make it easier to abstract json APIs.
 
-This does not depend on any other networking and mapping frameworks. So you can bridge between AbstractionKit and any frameworks you usually use.
+AbstractionKit does not depend on any other networking and mapping frameworks. So you can bridge between AbstractionKit and any frameworks you usually use.
 
 ## Overview
 
-You can define your API endpoint as follows,
+Define your API endpoint as follows:
 
 ```swift
 struct GetUser: EndpointDefinition {
@@ -36,7 +36,7 @@ struct GetUser: EndpointDefinition {
 }
 ```
 
-and you can simply extract objects from JSON as follows,
+then simply extract objects from JSON like so:
 
 ```swift
 // `json` is a dictionary that API returned
