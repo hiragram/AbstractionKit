@@ -51,10 +51,8 @@ A sample that uses [APIKit](https://github.com/ishkawa/APIKit), [Himotoki](https
 
 ### Requirements
 
-- Swift 3.1
-- Xcode 8.3
-
-__🔰 Swift 4 and Xcode 9 support is not available yet. 🔰__
+- Swift 4.0
+- Xcode 9.x
 
 ### Carthage
 
