@@ -17,6 +17,10 @@ struct Endpoint {
         let parameters: [String: Any]
         var method: HTTPMethod = .get
 
+        var header: [String : String] {
+            return ["Endpoint-Specific-Header": "Hello"]
+        }
+
         init(cityName: String, countryCode: String) {
             parameters = [
                 "q": "\(cityName),\(countryCode)",

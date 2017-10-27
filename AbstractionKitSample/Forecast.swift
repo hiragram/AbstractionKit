@@ -10,7 +10,7 @@ import Foundation
 import AbstractionKit
 import Himotoki
 
-struct Forecast: ArrayResponseElement, Decodable {
+struct Forecast: ArrayResponseElement, Himotoki.Decodable {
     static var pluralKey = "forecasts"
 
     var date: Date

@@ -10,6 +10,7 @@ import Foundation
 
 public protocol EnvironmentDefinition {
     var baseURLStr: String { get }
+    var commonHeader: [String: String] { get }
 
     func url(forPath: String) -> URL
 }
@@ -17,5 +18,9 @@ public protocol EnvironmentDefinition {
 public extension EnvironmentDefinition {
     func url(forPath path: String) -> URL {
         return URL.init(string: baseURLStr + path)!
+    }
+
+    var commonHeader: [String: String] {
+        return [:]
     }
 }
