@@ -58,5 +58,9 @@ extension Abstraction {
 
 struct Environment: EnvironmentDefinition {
     var baseURLStr: String = "http://samples.openweathermap.org/data/2.5"
+
+    var commonHeader: [String : String] {
+        return ["Custom-Common-Header": "CommonValue"]
+    }
 }
 

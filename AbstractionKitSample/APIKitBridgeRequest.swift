@@ -25,6 +25,10 @@ struct APIKitBridgeRequest<Endpoint: EndpointDefinition>: APIKit.Request {
         return endpoint.method.apiKitMethod
     }
 
+    var headerFields: [String: String] {
+        return Endpoint.environment.commonHeader.merging(endpoint.header, uniquingKeysWith: { $1 })
+    }
+
     private let endpoint: Endpoint
 
     init(endpoint: Endpoint) {
