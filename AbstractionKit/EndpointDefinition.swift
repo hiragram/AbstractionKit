@@ -16,5 +16,12 @@ public protocol EndpointDefinition {
     static var environment: Environment { get }
 
     var parameters: [String: Any] { get }
+    var header: [String: Any] { get }
     var method: HTTPMethod { get }
+}
+
+public extension EndpointDefinition {
+    var header: [String: Any] {
+        return [:]
+    }
 }
