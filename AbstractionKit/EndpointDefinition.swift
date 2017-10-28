@@ -12,7 +12,7 @@ public protocol EndpointDefinition {
     associatedtype Response: ResponseDefinition
     associatedtype Environment: EnvironmentDefinition
 
-    static var path: String { get }
+    var path: String { get }
     static var environment: Environment { get }
 
     var parameters: [String: Any] { get }

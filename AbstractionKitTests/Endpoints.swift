@@ -12,7 +12,7 @@ import AbstractionKit
 struct GetUser: EndpointDefinition {
     typealias Response = SingleResponse<User>
 
-    static var path = "/user"
+    var path = "/user"
 
     static var environment: Environment = .init()
 

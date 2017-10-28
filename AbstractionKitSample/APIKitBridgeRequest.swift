@@ -15,7 +15,9 @@ struct APIKitBridgeRequest<Endpoint: EndpointDefinition>: APIKit.Request {
     typealias Response = Endpoint.Response.Result
     var baseURL: URL = Endpoint.environment.url(forPath: "")
 
-    var path = Endpoint.path
+    var path: String {
+        return endpoint.path
+    }
 
     var parameters: Any? {
         return endpoint.parameters
