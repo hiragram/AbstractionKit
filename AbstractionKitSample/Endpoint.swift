@@ -12,7 +12,7 @@ import AbstractionKit
 struct Endpoint {
     struct GetForecast: EndpointDefinition {
         typealias Response = ListKeyResponse<ArrayResponse<Forecast>>
-        static var path: String = "/forecast"
+        var path: String = "/forecast"
         static var environment: Environment = .init()
         let parameters: [String: Any]
         var method: HTTPMethod = .get
