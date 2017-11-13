@@ -28,6 +28,18 @@
 		60873F0E1F776DDD00489857 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873F0D1F776DDD00489857 /* Models.swift */; };
 		60873F121F776F5E00489857 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873F111F776F5E00489857 /* Endpoints.swift */; };
 		60873F151F77739300489857 /* Dictionary+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873F141F77739300489857 /* Dictionary+decode.swift */; };
+		60F159711FB965100038FB36 /* EndpointDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1596B1FB964CC0038FB36 /* EndpointDefinition.swift */; };
+		60F159721FB965100038FB36 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1596C1FB964CC0038FB36 /* Environment.swift */; };
+		60F159731FB965100038FB36 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1596D1FB964CC0038FB36 /* Errors.swift */; };
+		60F159741FB965100038FB36 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1596E1FB964CC0038FB36 /* HTTPMethod.swift */; };
+		60F159751FB965100038FB36 /* ResponseDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1596F1FB964CC0038FB36 /* ResponseDefinition.swift */; };
+		60F159761FB965100038FB36 /* ResponseElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F159701FB964CC0038FB36 /* ResponseElement.swift */; };
+		60F159771FB965140038FB36 /* EndpointDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1596B1FB964CC0038FB36 /* EndpointDefinition.swift */; };
+		60F159781FB9652B0038FB36 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1596C1FB964CC0038FB36 /* Environment.swift */; };
+		60F159791FB9652B0038FB36 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1596D1FB964CC0038FB36 /* Errors.swift */; };
+		60F1597A1FB9652B0038FB36 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1596E1FB964CC0038FB36 /* HTTPMethod.swift */; };
+		60F1597B1FB9652B0038FB36 /* ResponseDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1596F1FB964CC0038FB36 /* ResponseDefinition.swift */; };
+		60F1597C1FB9652B0038FB36 /* ResponseElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F159701FB964CC0038FB36 /* ResponseElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -451,6 +463,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60F159741FB965100038FB36 /* HTTPMethod.swift in Sources */,
+				60F159711FB965100038FB36 /* EndpointDefinition.swift in Sources */,
+				60F159751FB965100038FB36 /* ResponseDefinition.swift in Sources */,
+				60F159761FB965100038FB36 /* ResponseElement.swift in Sources */,
+				60F159731FB965100038FB36 /* Errors.swift in Sources */,
+				60F159721FB965100038FB36 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,9 +477,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				60374D581F76AE7300CC9991 /* AbstractionKitTests.swift in Sources */,
+				60F159781FB9652B0038FB36 /* Environment.swift in Sources */,
 				60873F121F776F5E00489857 /* Endpoints.swift in Sources */,
 				60873F0E1F776DDD00489857 /* Models.swift in Sources */,
+				60F1597B1FB9652B0038FB36 /* ResponseDefinition.swift in Sources */,
+				60F1597A1FB9652B0038FB36 /* HTTPMethod.swift in Sources */,
+				60F159771FB965140038FB36 /* EndpointDefinition.swift in Sources */,
+				60F1597C1FB9652B0038FB36 /* ResponseElement.swift in Sources */,
 				60873F151F77739300489857 /* Dictionary+decode.swift in Sources */,
+				60F159791FB9652B0038FB36 /* Errors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -724,6 +748,7 @@
 		60374D611F76AE7300CC9991 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -740,6 +765,7 @@
 		60374D621F76AE7300CC9991 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
