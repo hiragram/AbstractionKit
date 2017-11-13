@@ -8,21 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6020A25F1F96FE5300D09209 /* AbstractionKit_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 6020A25D1F96FE5300D09209 /* AbstractionKit_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6020A2631F96FE7500D09209 /* EndpointDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D631F76B12900CC9991 /* EndpointDefinition.swift */; };
-		6020A2641F96FE7500D09209 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D6B1F76B3A200CC9991 /* HTTPMethod.swift */; };
-		6020A2651F96FE7500D09209 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D691F76B37400CC9991 /* Environment.swift */; };
-		6020A2661F96FE7500D09209 /* ResponseDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D651F76B21D00CC9991 /* ResponseDefinition.swift */; };
-		6020A2671F96FE7500D09209 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D6D1F76B87000CC9991 /* Errors.swift */; };
-		6020A2681F96FE7500D09209 /* ResponseElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D671F76B29900CC9991 /* ResponseElement.swift */; };
 		60374D531F76AE7300CC9991 /* AbstractionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60374D491F76AE7300CC9991 /* AbstractionKit.framework */; };
 		60374D581F76AE7300CC9991 /* AbstractionKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D571F76AE7300CC9991 /* AbstractionKitTests.swift */; };
 		60374D5A1F76AE7300CC9991 /* AbstractionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 60374D4C1F76AE7300CC9991 /* AbstractionKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60374D641F76B12900CC9991 /* EndpointDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D631F76B12900CC9991 /* EndpointDefinition.swift */; };
-		60374D661F76B21D00CC9991 /* ResponseDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D651F76B21D00CC9991 /* ResponseDefinition.swift */; };
-		60374D681F76B29900CC9991 /* ResponseElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D671F76B29900CC9991 /* ResponseElement.swift */; };
-		60374D6A1F76B37400CC9991 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D691F76B37400CC9991 /* Environment.swift */; };
-		60374D6C1F76B3A200CC9991 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D6B1F76B3A200CC9991 /* HTTPMethod.swift */; };
-		60374D6E1F76B87000CC9991 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D6D1F76B87000CC9991 /* Errors.swift */; };
 		60374D761F76B9E400CC9991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D751F76B9E400CC9991 /* AppDelegate.swift */; };
 		60374D781F76B9E400CC9991 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60374D771F76B9E400CC9991 /* ViewController.swift */; };
 		60374D7B1F76B9E400CC9991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60374D791F76B9E400CC9991 /* Main.storyboard */; };
@@ -69,12 +57,6 @@
 		60374D521F76AE7300CC9991 /* AbstractionKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbstractionKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60374D571F76AE7300CC9991 /* AbstractionKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionKitTests.swift; sourceTree = "<group>"; };
 		60374D591F76AE7300CC9991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60374D631F76B12900CC9991 /* EndpointDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointDefinition.swift; sourceTree = "<group>"; };
-		60374D651F76B21D00CC9991 /* ResponseDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseDefinition.swift; sourceTree = "<group>"; };
-		60374D671F76B29900CC9991 /* ResponseElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseElement.swift; sourceTree = "<group>"; };
-		60374D691F76B37400CC9991 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		60374D6B1F76B3A200CC9991 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		60374D6D1F76B87000CC9991 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		60374D731F76B9E400CC9991 /* AbstractionKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbstractionKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60374D751F76B9E400CC9991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60374D771F76B9E400CC9991 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +76,12 @@
 		60873F0D1F776DDD00489857 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		60873F111F776F5E00489857 /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		60873F141F77739300489857 /* Dictionary+decode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+decode.swift"; sourceTree = "<group>"; };
+		60F1596B1FB964CC0038FB36 /* EndpointDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointDefinition.swift; sourceTree = "<group>"; };
+		60F1596C1FB964CC0038FB36 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		60F1596D1FB964CC0038FB36 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		60F1596E1FB964CC0038FB36 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		60F1596F1FB964CC0038FB36 /* ResponseDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDefinition.swift; sourceTree = "<group>"; };
+		60F159701FB964CC0038FB36 /* ResponseElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +134,7 @@
 		60374D3F1F76AE7300CC9991 = {
 			isa = PBXGroup;
 			children = (
+				60F159691FB964CC0038FB36 /* Sources */,
 				60374D4B1F76AE7300CC9991 /* AbstractionKit */,
 				60374D561F76AE7300CC9991 /* AbstractionKitTests */,
 				60374D741F76B9E400CC9991 /* AbstractionKitSample */,
@@ -170,12 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				60374D4C1F76AE7300CC9991 /* AbstractionKit.h */,
-				60374D631F76B12900CC9991 /* EndpointDefinition.swift */,
-				60374D6B1F76B3A200CC9991 /* HTTPMethod.swift */,
-				60374D691F76B37400CC9991 /* Environment.swift */,
-				60374D651F76B21D00CC9991 /* ResponseDefinition.swift */,
-				60374D6D1F76B87000CC9991 /* Errors.swift */,
-				60374D671F76B29900CC9991 /* ResponseElement.swift */,
 				60374D4D1F76AE7300CC9991 /* Info.plist */,
 			);
 			path = AbstractionKit;
@@ -228,6 +211,27 @@
 				60374D901F76C3AD00CC9991 /* RxSwift.framework */,
 			);
 			name = PrivateDependencies;
+			sourceTree = "<group>";
+		};
+		60F159691FB964CC0038FB36 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				60F1596A1FB964CC0038FB36 /* AbstractionKit */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		60F1596A1FB964CC0038FB36 /* AbstractionKit */ = {
+			isa = PBXGroup;
+			children = (
+				60F1596B1FB964CC0038FB36 /* EndpointDefinition.swift */,
+				60F1596C1FB964CC0038FB36 /* Environment.swift */,
+				60F1596D1FB964CC0038FB36 /* Errors.swift */,
+				60F1596E1FB964CC0038FB36 /* HTTPMethod.swift */,
+				60F1596F1FB964CC0038FB36 /* ResponseDefinition.swift */,
+				60F159701FB964CC0038FB36 /* ResponseElement.swift */,
+			);
+			path = AbstractionKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,12 +444,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6020A2641F96FE7500D09209 /* HTTPMethod.swift in Sources */,
-				6020A2671F96FE7500D09209 /* Errors.swift in Sources */,
-				6020A2651F96FE7500D09209 /* Environment.swift in Sources */,
-				6020A2681F96FE7500D09209 /* ResponseElement.swift in Sources */,
-				6020A2631F96FE7500D09209 /* EndpointDefinition.swift in Sources */,
-				6020A2661F96FE7500D09209 /* ResponseDefinition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,12 +451,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60374D681F76B29900CC9991 /* ResponseElement.swift in Sources */,
-				60374D6A1F76B37400CC9991 /* Environment.swift in Sources */,
-				60374D641F76B12900CC9991 /* EndpointDefinition.swift in Sources */,
-				60374D6C1F76B3A200CC9991 /* HTTPMethod.swift in Sources */,
-				60374D6E1F76B87000CC9991 /* Errors.swift in Sources */,
-				60374D661F76B21D00CC9991 /* ResponseDefinition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -732,7 +724,6 @@
 		60374D611F76AE7300CC9991 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -749,7 +740,6 @@
 		60374D621F76AE7300CC9991 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
